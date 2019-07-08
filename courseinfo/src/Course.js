@@ -3,10 +3,10 @@ import React from 'react'
 import Header from './Header'
 import Content from './Content'
 
-const Course = ({course}) => (
+const Course = ({name, parts}) => (
   <div>
-    <Header name={course.name} />
-    <Content parts={course.parts} />
+    <Header name={name} />
+    <Content parts={parts} />
   </div>
 )
 
