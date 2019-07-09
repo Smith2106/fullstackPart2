@@ -4,7 +4,7 @@ import Country from './Country'
 import CountryListing from './CountryListing'
 
 const Countries = ({countries, showCountry}) => {
-  const listCountries = () => countries.map(country => <CountryListing key={country.name} name={country.name} showCountry={() => showCountry(country)} />)
+  const listCountries = () => countries.map(country => <CountryListing key={country.name} country={country} />)
 
   if (countries.length > 10) {
     return <div>Too many matches, specify another filter.</div>
